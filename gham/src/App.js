@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import AdminMain from "./pages/adminMain";
 function App() {
   return (
-    <div className="App">
-      메인페이지
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<AdminMain />} />
+      </Routes>
+    </Router>
   );
 }
 
